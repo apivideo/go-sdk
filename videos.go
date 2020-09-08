@@ -57,8 +57,8 @@ type VideoRequest struct {
 	Source      string     `json:"source,omitempty"`
 	PlayerID    string     `json:"playerId,omitempty"`
 	Public      bool       `json:"public,omitempty"`
-	Panoramic   bool       `json:"panoramic"`
-	Mp4Support  bool       `json:"mp4Support"`
+	Panoramic   bool       `json:"panoramic,omitempty"`
+	Mp4Support  bool       `json:"mp4Support,omitempty"`
 }
 
 //VideoStatus represents the encoding status of one video
@@ -146,11 +146,13 @@ type VideoLivestream struct {
 }
 
 //Assets represents Video assets
+//Assets.Mp4 is available if Mp4Support is true and the video is encoded, else it's empty string
 type Assets struct {
 	Hls       string `json:"hls,omitempty"`
 	Iframe    string `json:"iframe,omitempty"`
 	Player    string `json:"player,omitempty"`
 	Thumbnail string `json:"thumbnail,omitempty"`
+	Mp4       string `json:"mp4,omitempty"`
 }
 
 //Get returns a Video by id

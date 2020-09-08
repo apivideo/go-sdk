@@ -42,7 +42,8 @@ var videoJSONResponses = []string{`{
 	  "iframe": "<iframe src='//embed.api.video/vod/vi4k0jvEUuaTdRAEjQ4Jfagz' width='100%' height='100%' frameborder='0' scrolling='no' allowfullscreen=''></iframe>",
 	  "player": "https://embed.api.video/vod/vi4k0jvEUuaTdRAEjQ4Jfagz",
 	  "hls": "https://cdn.api.video/vod/vi4k0jvEUuaTdRAEjQ4Jfagz/hls/manifest.m3u8",
-	  "thumbnail": "https://cdn.api.video/vod/vi4k0jvEUuaTdRAEjQ4Jfagz/thumbnail.jpg"			
+	  "thumbnail": "https://cdn.api.video/vod/vi4k0jvEUuaTdRAEjQ4Jfagz/thumbnail.jpg",
+	  "mp4": "https://cdn.api.video/vod/vi4k0jvEUuaTdRAEjQ4Jfagz/mp4/360/source.mp4"
 	}
   }`,
 	`{
@@ -103,6 +104,7 @@ var videoStructs = []Video{
 			Iframe:    "<iframe src='//embed.api.video/vod/vi4k0jvEUuaTdRAEjQ4Jfagz' width='100%' height='100%' frameborder='0' scrolling='no' allowfullscreen=''></iframe>",
 			Thumbnail: "https://cdn.api.video/vod/vi4k0jvEUuaTdRAEjQ4Jfagz/thumbnail.jpg",
 			Player:    "https://embed.api.video/vod/vi4k0jvEUuaTdRAEjQ4Jfagz",
+			Mp4:       "https://cdn.api.video/vod/vi4k0jvEUuaTdRAEjQ4Jfagz/mp4/360/source.mp4",
 		},
 		PlayerID:   "pl45KFKdlddgk654dspkze",
 		Public:     true,
@@ -416,7 +418,6 @@ func TestVideos_Create(t *testing.T) {
 			"title":       "Maths video",
 			"description": "An amazing video explaining the string theory",
 			"public":      true,
-			"panoramic":   false,
 			"mp4Support":  true,
 			"playerId":    "pl45KFKdlddgk654dspkze",
 			"tags":        []interface{}{"maths", "string theory", "video"},
@@ -457,7 +458,6 @@ func TestVideos_Update(t *testing.T) {
 			"title":       "Maths video",
 			"description": "An amazing video explaining the string theory",
 			"public":      true,
-			"panoramic":   false,
 			"mp4Support":  true,
 			"playerId":    "pl45KFKdlddgk654dspkze",
 			"tags":        []interface{}{"maths", "string theory", "video"},
