@@ -1,3 +1,5 @@
+![](https://github.com/apivideo/API_OAS_file/blob/master/apivideo_banner.png)
+
 # api.video Golang SDK
 
 The [api.video](https://api.video/) web-service helps you put video on the web without the hassle. This documentation helps you use the corresponding Golang client.
