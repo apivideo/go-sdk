@@ -131,6 +131,7 @@ func (c *Client) prepareRequest(method, urlStr string, body interface{}) (*http.
 
 	req.Header.Set("Accept", "application/json")
 	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("User-Agent", "api.video SDK (go; v:1.0)")
 
 	req, err = c.auth(req)
 
