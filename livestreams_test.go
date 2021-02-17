@@ -17,6 +17,7 @@ var liveJSONResponses = []string{
 		"name": "My livestream",
 		"record": false,
 		"broadcasting": false,
+		"public": true,
 		"assets": {
 			"iframe": "<iframe src=\"https://embed.api.video/live/li2FgWk8CyBKFIGyDK1SimnL\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"\"></iframe>",
 			"player": "https://embed.api.video/live/li2FgWk8CyBKFIGyDK1SimnL",
@@ -30,6 +31,7 @@ var liveJSONResponses = []string{
 		"name": "My livestream 2",
 		"record": false,
 		"broadcasting": false,
+		"public": false,
 		"assets": {
 			"iframe": "<iframe src=\"https://embed.api.video/live/liXyizQXIaWWenlD8pc3WLS\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"\"></iframe>",
 			"player": "https://embed.api.video/live/liXyizQXIaWWenlD8pc3WLS",
@@ -44,6 +46,7 @@ var liveStructs = []Livestream{
 		Name:         "My livestream",
 		StreamKey:    "bd003ee9-9f71-44fd-a191-14d6a5063181",
 		Record:       false,
+		Public:       true,
 		Assets: &Assets{
 			Hls:       "https://live.api.video/li2FgWk8CyBKFIGyDK1SimnL.m3u8",
 			Iframe:    "<iframe src=\"https://embed.api.video/live/li2FgWk8CyBKFIGyDK1SimnL\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"\"></iframe>",
@@ -57,6 +60,7 @@ var liveStructs = []Livestream{
 		Name:         "My livestream 2",
 		StreamKey:    "ffee715c-72b8-4ed6-ab98-8d4602ced98f",
 		Record:       false,
+		Public:       false,
 		Assets: &Assets{
 			Hls:       "https://live.api.video/liXyizQXIaWWenlD8pc3WLS.m3u8",
 			Iframe:    "<iframe src=\"https://embed.api.video/live/liXyizQXIaWWenlD8pc3WLS\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"\"></iframe>",

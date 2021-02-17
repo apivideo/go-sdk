@@ -37,6 +37,7 @@ type Livestream struct {
 	Assets       *Assets `json:"assets,omitempty"`
 	PlayerID     string  `json:"playerId,omitempty"`
 	Broadcasting bool    `json:"broadcasting,omitempty"`
+	Public       bool    `json:"public,omitempty"`
 }
 
 //LivestreamList represents a list of livestream
