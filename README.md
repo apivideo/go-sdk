@@ -1,5 +1,8 @@
 ![](https://github.com/apivideo/API_OAS_file/blob/master/apivideo_banner.png)
 
+## DEPRECATION WARNING: this SDK will soon be **deprecated** and will no longer be maintained. It has been replaced by the **[Golang API client](https://github.com/apivideo/go-api-client)**. Please use it instead.
+
+
 # api.video Golang SDK
 
 The [api.video](https://api.video/) web-service helps you put video on the web without the hassle. This documentation helps you use the corresponding Golang client.
